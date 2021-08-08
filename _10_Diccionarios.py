@@ -12,6 +12,7 @@ manzana = {'nombre': 'Manzana', 'color': 'Rojo'}
 # Algunas formas de referenciar valores
 print(manzana['nombre'])  # 'Manzana'
 print(manzana.get('color'))  # 'Rojo'
+print(manzana.items())  # dict_items([('nombre', 'Manzana'), ('color', 'Rojo')]))
 
 # Se pueden crear nuevas claves para ese diccionario, por ejemplo, el sabor de una manzana
 manzana['sabor'] = 'Dulce'
