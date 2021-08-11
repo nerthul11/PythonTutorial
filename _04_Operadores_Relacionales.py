@@ -3,6 +3,7 @@ El valor de algo también puede definirse haciendo una comparación entre dos o 
 >: Mayor que.
 >=: Mayor o igual que.
 ==: Igual que. (Recordemos que un solo "=" se usa para asignar valores)
+!=: Distinto que.
 <=: Menor o igual que.
 <: Menor que.
 

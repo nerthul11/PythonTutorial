@@ -21,7 +21,7 @@ lista_de_nombres.sort()
 print(lista_de_nombres)  # ['Brenda', 'Eliana', 'Gabriel', 'Leandro', 'Lidia']
 
 # Se puede encontrar la posición de un valor (si es repetido, la posición indica su primera aparición)
-print(lista_de_nombres.index("Leandro")) # Si no existe el valor dentro de la lista, recibimos un ValueError
+print(lista_de_nombres.index("Leandro"))  # Si no existe el valor dentro de la lista, recibimos un ValueError
 
 # Se pueden remover valores
 lista_de_nombres.remove("Leandro")
