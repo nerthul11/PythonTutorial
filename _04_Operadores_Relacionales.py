@@ -16,3 +16,6 @@ print(variable)  # El valor de variable es True porque 5 es mayor que 3.
 
 variable = 5 >= 5
 print(variable)  # El valor sigue siendo True, porque >= contempla casos de igualdad.
+
+variable = 4 != 2 + 1
+print(variable)  # Nuevamente True, porque 4 es distinto a 2 + 1 (3)

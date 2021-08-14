@@ -27,7 +27,6 @@ class Pokemon:
 
     def mt_cargado(self, n):
         ataques_cargados = ['Chispazo', 'Rayo', 'Voltio Cruel']
-
         if n == 1:
             ataques_cargados.remove(self.ataque_cargado1)
             if self.ataque_cargado2:

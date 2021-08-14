@@ -60,7 +60,7 @@ class Pokemon:
         b = f"\n{self.ataque_rapido}, {self.ataque_cargado1}/{self.ataque_cargado2}"
         return a + b
 
-poke = Pokemon(pokedex[random.randint(1, 3)], random.randint(1, 35))
+poke = Pokemon(pokedex[random.randint(1, 2)], random.randint(1, 35))
 print(poke)
 poke.agregar_segundo_ataque()
 print(poke)

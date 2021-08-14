@@ -1,7 +1,7 @@
 """
 Ahora que tenemos nuestra Pokedex mucho más completa, podemos rearmar un poco la Clase de _15_Objetos.py adaptándola
-a las pequeñas pero existentes diferencias de formato, y leyendo desde el archivo que creamos en lugar de una
-variable que almacena muchísima información y por ende consume mucha RAM.
+a las pequeñas pero existentes diferencias de formato, y leyendo desde el archivo que creamos en lugar de crear el
+contenido de la variable cada vez que se ejecuta el programa, algo que consume mucho tiempo y memoria.
 """
 import random
 import json
@@ -57,8 +57,10 @@ class Pokemon:
             ataques_cargados.remove(self.ataque_cargado1)
             if self.ataque_cargado2:
                 self.ataque_cargado2 = random.choice(ataques_cargados)
+            print('¡La evolución fue un éxito!')
+            print(self)
         except KeyError:
-            pass
+            print(f'{self.species} no puede evolucionar.')
 
     def __str__(self):
         a = f"{self.species} Nv. {self.level} ({self.ataque_iv}/{self.defensa_iv}/{self.salud_iv})"
@@ -70,4 +72,3 @@ print(pokemon_salvaje)
 pokemon_salvaje.agregar_segundo_ataque()
 print(pokemon_salvaje)
 pokemon_salvaje.evolucionar()
-print(pokemon_salvaje)
