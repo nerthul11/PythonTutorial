@@ -10,6 +10,7 @@ El resultado de este programa será un mensaje que diga un nombre.
 Primero, definiremos el nombre usando la consola
 """
 nombre = input("Escribe tu nombre: ") # Esto hará que un mensaje aparezca. El espacio al final es por estética.
+print(nombre)
 
 """
 Luego ejecutaremos un print que diga "Hola, " seguido del nombre insertado.

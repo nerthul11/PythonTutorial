@@ -23,30 +23,27 @@ def crear_pokedex():
 
     # Ahora sumaremos el tipo: Aquí filtramos todos los que tengan formas alternativas para dar simpleza.
     for pokemon in types:
-        if pokemon['form'] == 'Normal':
-            try:
-                nueva_pokedex[pokemon['pokemon_id']]['type'] = pokemon['type']
-            except KeyError:  # En caso de que alguna ID no esté en el listado original, lo salteamos.
-                pass
+        try:
+            nueva_pokedex[pokemon['pokemon_id']]['type'] = pokemon['type']
+        except KeyError:  # En caso de que alguna ID no esté en el listado original, lo salteamos.
+            pass
 
     # Luego sumaremos las evoluciones.
     for pokemon in evolutions:
-        if pokemon['form'] == 'Normal':
-            try:
-                nueva_pokedex[pokemon['pokemon_id']]['evolutions'] = pokemon['evolutions']
-            except KeyError:
-                pass
+        try:
+            nueva_pokedex[pokemon['pokemon_id']]['evolutions'] = pokemon['evolutions']
+        except KeyError:
+            pass
 
     # Y, finalmente, sumamos sus técnicas.
     for pokemon in moves:
-        if pokemon['form'] == 'Normal':
-            try:
-                nueva_pokedex[pokemon['pokemon_id']]['fast_moves'] = pokemon['fast_moves']
-                nueva_pokedex[pokemon['pokemon_id']]['elite_fast_moves'] = pokemon['elite_fast_moves']
-                nueva_pokedex[pokemon['pokemon_id']]['charged_moves'] = pokemon['charged_moves']
-                nueva_pokedex[pokemon['pokemon_id']]['elite_charged_moves'] = pokemon['elite_charged_moves']
-            except KeyError:
-                pass
+        try:
+            nueva_pokedex[pokemon['pokemon_id']]['fast_moves'] = pokemon['fast_moves']
+            nueva_pokedex[pokemon['pokemon_id']]['elite_fast_moves'] = pokemon['elite_fast_moves']
+            nueva_pokedex[pokemon['pokemon_id']]['charged_moves'] = pokemon['charged_moves']
+            nueva_pokedex[pokemon['pokemon_id']]['elite_charged_moves'] = pokemon['elite_charged_moves']
+        except KeyError:
+            pass
 
     # Finalizamos la función retornando la nueva pokedex completa.
     return nueva_pokedex

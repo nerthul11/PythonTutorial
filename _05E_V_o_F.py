@@ -1,7 +1,7 @@
 """
 Ejercicio:
 
-Considerando el funcionamiento de los operadores booleanos, considerar si estas expresiones son True o False.
+Considerando el funcionamiento de los operadores booleanos,evaluar si estas expresiones son True o False.
 Ejecutar el código mostrará las respuestas.
 """
 ejemplo0 = True

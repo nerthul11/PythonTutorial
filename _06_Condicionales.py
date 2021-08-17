@@ -18,9 +18,9 @@ else:
 print("Esto ya no forma parte del if.")
 
 # También se pueden anidar condicionales, es decir: un if adentro de otro if
-if n > 100:
+if n >= 100:
     if n % 2 == 0:
-        print(f"{n} es par y mayor a 100.")
+        print(f"{n} es par y mayor o igual a 100.")
     else:
         print(f"{n} es impar y mayor a 100.")
 else:
