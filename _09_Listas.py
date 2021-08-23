@@ -33,4 +33,3 @@ print(len(lista_de_nombres))  # 4
 # Se puede limpiar por completo
 lista_de_nombres.clear()
 print(lista_de_nombres)  # []
-

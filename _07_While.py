@@ -1,11 +1,11 @@
 """
 Otro concepto clave en programación es el de ciclo o bucle (Loop).
 
-En Python existen dos tipos de bucle, ahora veremos uno de ellos: While.
+En Python existen dos tipos de bucle, ahora veremos uno de ellos: While (mientras que).
 
 Un ciclo es un fragmento de código que se ejecuta una y otra vez hasta que se rompe.
 
-El ciclo while (mientras que) se ejecutará indefinidamente hasta que se cumpla la condición o bien
+El ciclo while se ejecutará indefinidamente hasta que se cumpla la condición o bien
 se utilice el comando "break"
 """
 
