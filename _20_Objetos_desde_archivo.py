@@ -6,7 +6,7 @@ contenido de la variable cada vez que se ejecuta el programa, algo que consume m
 import random
 import json
 
-with open('_18bis_Pokedex.json', 'r') as archivo:
+with open('_19bis_Pokedex.json', 'r') as archivo:
     pokedex = json.loads(archivo.read())
 
 class Pokemon:
@@ -24,7 +24,7 @@ class Pokemon:
         self.ataque_cargado2 = None
 
     def mt_rapido(self):
-        ataques_rapidos = pokedex[self.pid-1]['fast_moves']
+        ataques_rapidos = pokedex[self.pid]['fast_moves']
         ataques_rapidos.remove(self.ataque_rapido)
         self.ataque_rapido = random.choice(ataques_rapidos)
 
@@ -58,7 +58,6 @@ class Pokemon:
             if self.ataque_cargado2:
                 self.ataque_cargado2 = random.choice(ataques_cargados)
             print('¡La evolución fue un éxito!')
-            print(self)
         except KeyError:
             print(f'{self.species} no puede evolucionar.')
 
@@ -72,3 +71,4 @@ print(pokemon_salvaje)
 pokemon_salvaje.agregar_segundo_ataque()
 print(pokemon_salvaje)
 pokemon_salvaje.evolucionar()
+print(pokemon_salvaje)

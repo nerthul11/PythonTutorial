@@ -4,5 +4,5 @@ Partiendo de la base del JSON creado en el archivo _18_API_Parte3.py, agregar un
 """
 import json
 
-with open('_18bis_Pokedex.json', 'r') as archivo:
+with open('_19bis_Pokedex.json', 'r') as archivo:
     pokedex = json.loads(archivo.read())

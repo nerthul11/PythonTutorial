@@ -3,8 +3,9 @@ Aquí veremos cómo definir, estructurar y llamar una función.
 
 En general, conviene ubicar las funciones en las primeras líneas del código, porque para poder utilizarlas
 primero deben estar definidas.
+
+Primero, vamos a definir una función que no tome parámetros:
 """
-# Primero, vamos a definir una función que no tome parámetros:
 def hola_mundo():
     print("Hola, mundo")
 

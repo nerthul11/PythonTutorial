@@ -5,7 +5,7 @@ No resulta nada práctico crear una subclase para CADA Pokémon, puesto que todo
 todos los mismos atributos. Por lo tanto, tomaremos el ejemplo anterior y lo optimizaremos un poco.
 """
 import random
-from _15bis_Pokedex import pokedex
+from _16bis_Pokedex import pokedex
 
 class Pokemon:
     def __init__(self, data, level):

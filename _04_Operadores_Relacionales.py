@@ -8,7 +8,9 @@ El valor de algo también puede definirse haciendo una comparación entre dos o 
 <: Menor que.
 
 Esto dará como resultado un valor booleano (True o False).
-Asimismo, estos operadores son válidos únicamente con valores numéricos (Int o Float)
+
+Asimismo, estos operadores son válidos únicamente con valores numéricos (Int o Float) a excepción de
+los operadores == y !=, que se pueden utilizar para cualquier tipo de variable.
 """
 
 variable = 5 > 3

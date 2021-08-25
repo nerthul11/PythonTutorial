@@ -7,8 +7,8 @@ un sitio web propio, basta con crear un link que de como resultado este JSON par
 usar nuestro API.
 """
 import json
-from _17_API_Parte_2 import crear_pokedex
+from _18_API_Parte_2 import crear_pokedex
 
 data = crear_pokedex()
-with open('_18bis_Pokedex.json', 'w') as f:
+with open('_19bis_Pokedex.json', 'w') as f:
     json.dump(data, f)

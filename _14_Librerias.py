@@ -8,7 +8,7 @@ También se pueden importar funciones de archivos que tengas en la misma carpeta
 """
 
 import random
-from _12_Funciones import es_par
+from _13_Funciones import es_par
 
 numero_aleatorio = random.randint(1, 100)
 print(numero_aleatorio)
